@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, intital-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/335b50e245.js" crossorigin="anonymous"></script>
+ </head>   
+ <body>
+
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#expertise">Expertise</a></li>
+                    <!-- <li><a href="#portfolio">Projects</a></li> -->
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <h1>Mazen Massalkhi<span> CSSCP </span></h1>
+                <p>Strategic Supply Chain and Logistics Leader</p>
+        </div>
+    </div>
+    </div>
+<!-- ---------------- about --------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="user.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>In my extensive three-decade career in Supply Chain Functions, I have specialized in end-to-end supply chain 
+                        transformation, process planning and execution, procurement, supply and demand forecasting, logistics, distribution, 
+                        omnichannel operations, Q-commerce, order fulfillment, last mile delivery, warehouse automation, and commercial 
+                        operations.<br><br>
+                        As a leader, I am dedicated to innovation and continuous improvement, drawing on my experience to drive operational excellence 
+                        through strategic initiatives that enhance efficiency, optimize operations, and reduce costs even in resource-constrained environments. 
+                        Renowned for my dynamic personality, boundless energy, and genuine passion for the industry, I thrive on the challenges of Supply Chain 
+                        Management. I excel in developing creative solutions to complex problems, building high-performing teams, and nurturing strong partnerships 
+                        across the supply chain network.</p>
+
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('Certifications')">Certifications</p>
+                            <p class="tab-links" onclick="opentab('Education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="Skills">
+                            <ul>
+                                
+                                    <!-- <li><span>Python</span> - Intermediate</li>
+                                    <li><span>Java</span> - Intermediate</li>
+                                
+                                    <li><span>C</span> - Intermediate</li>
+                                    <li><span>Linux</span> - Beginner</li>
+                                
+                                    <li><span>HTML</span> - Beginner</li>
+                                    <li><span>CSS</span> - Beginner</li>
+                                
+                                    <li><span>JavaScript</span> - Beginner</li>
+                                    <li><span>Microsoft Office Suite</span> - Beginner</li> -->
+                                                            
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="Experience">
+                            <ul>
+                                <li><span>Jul 2021 - Present</span><br>Supply Chain & Logistics Director - BinDawood Holding</li>
+                                <li><span>Jan 2019 - Jun 2021</span><br>Head of Supply Chain & Logistics - Landmark Arabia</li>
+                                <li><span>Jul 2018 - Dec 2018</span><br>Managing Director - Logistics - United Yousef M Naghi Co. Ltd</li>
+                                <li><span>Jul 2014 - Jun 2018</span><br>Supply Chain & Logistics Director - eXtra</li>
+                                <li><span>Feb 2012 - Jun 2014</span><br>National Distribution & Logistics Manager - eXtra</li>
+                                <li><span>Jan 2010 - Jan 2012</span><br>Logistics Manager - Mubadala Aeorospace Unit - STRATA Manufacturing PJSC</li>
+                                <li><span>Jun 2008 - Jan 2010</span><br>Corporate Logistics Manager - The Sultan Center</li>
+                                <li><span>Aug 2007 - Jun 2008</span><br>Corporate Freight Manager - The Sultan Center</li>
+                                <li><span>Jan 1997 - Jul 2007</span><br>Supply Chain Manager - United Business Company</li>
+                                <li><span>Jul 1994 - Dec 1996</span><br>Supply Chain Analyst - United Business Company</li>
+                                
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="Certifications">
+                            <ul>
+                                <li><span>August 2023</span><br>CSSCP (Certified Sustainable Supply Chain Professional) - ISCEA</li>
+                                <li><span>December 2010</span><br>CISCM (Certified International Supply Chain Manager) - IPSCMI</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="Education">
+                            <ul>
+                                <li><span>1991 - 1994</span><br>American University of Beirut, Bachelor of Business Administration </li>
+                            </ul>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- -------------- services ---------------- -->
+    <div id="expertise">
+        <div class="container">
+            <h1 class="sub-title">Expertise</h1>
+            <div class="services-list">
+                <div> 
+                    <!-- 1 -->
+                    <i class="fa-solid fa-chalkboard-user"></i>
+                    <h2>Strategic Supply Chain Planning</h2>
+                    <p>It's essential to align with the organization's primary objectives and goals before establishing the Supply Chain Department's objectives, goals, strategies, and performance metrics.</p>
+                    
+                </div>
+                <div>
+                    <!-- 2 -->
+                    <i class="fa-solid fa-database"></i>
+                    <h2>Digital Transformation</h2>
+                    <p>Transitioning to advanced solutions like FnR, WMS, TMS, alongside harnessing AI, IoT, and Blockchain within supply chain technologies is critical. However, selecting the appropriate solution demands comprehensive due diligence, considering the organization's strategic direction and level of maturity.</p>
+                    
+                </div>
+                <div>
+                    <!-- 3 -->
+                    <i class="fa-solid fa-magnifying-glass-chart"></i>
+                    <h2>Control Tower & Data Analytics</h2>
+                    <p>The challenge no longer resides in gathering data or executing complex analytical tasks but in identifying the crucial insights within data. Supply Chain KPIs must be synchronized with the organization’s KPIs and strategic objectives.</p>
+                    
+                </div>
+                <div>
+                    <!-- 4 -->
+                    <i class="fa-solid fa-triangle-exclamation"></i>
+                    <h2>Risk Management & Supply Chain Resilience</h2>
+                    <p>Like any business sector, Supply Chain must proactively identify, evaluate, and address both internal and external risks, particularly for global operations. It's vital to distinguish between known and unknown risks, implementing appropriate countermeasures for each.</p>
+                    
+                </div>
+                <div>
+                    <!-- 5 -->
+                    <i class="fa-solid fa-recycle"></i>
+                    <h2>Supply Chain Sustainability</h2>
+                    <p>Supply Chain function plays a pivotal role in a company's sustainability efforts, with supply chain leaders often at the forefront of driving sustainability initiatives that support the Sustainable Development Goals (SDGs).</p>
+                    
+                </div>
+                <div>
+                    <!-- 6 -->
+                    <i class="fa-solid fa-circle-nodes"></i>
+                    <h2>Logistics Network Design</h2>
+                    <p>Determining the ideal network configuration, capacity, and locations is crucial, requiring significant capital investments and strategic planning based on the organization's specific needs, limits, and ambitions.</p>
+                    
+                </div>
+                <div>
+                    <!-- 7 -->
+                    <i class="fa-solid fa-warehouse"></i>
+                    <h2>Warehouse & Fulfillment Center Design </h2>
+                    <p>A successful design requires a thorough understanding of the organization’s strategic direction, existing challenges, and customer service commitments, utilizing the appropriate infrastructure.</p>
+                    
+                </div>
+                <div>
+                    <!-- 8 -->
+                    <i class="fa-solid fa-medal"></i>
+                    <h2>Process Improvement & Operational Excellence</h2>
+                    <p>Pursuing the industry’s best practices in process improvement is fundamental to achieving operational excellence, ensuring an efficient and effective functioning of the supply chain.</p>
+                    
+                </div>
+                <div>
+                    <!-- 9 -->
+                    <i class="fa-solid fa-boxes-stacked"></i>
+                    <h2>Inventory Management & Control</h2>
+                    <p>Ensuring the accuracy of product databases and inventory levels, controlling inventory orders with methodologies such as Open-To-Buy (OTB) and ABC inventory analysis, and optimizing the product assortment through strategic listing and delisting are examples of tools that enhance inventory optimization and streamline its management.</p>
+                    
+                </div>
+                <div>
+                    <!-- 10 -->
+                    <i class="fa-solid fa-chart-line"></i>
+                    <h2>Demand Forecasting & Replenishment</h2>
+                    <p>Striking the right balance between ensuring product availability and avoiding excess stock is crucial. This age-old challenge pits service levels against the cost of capital. Different industries and products require tailored forecasting methods.</p>
+                    
+                </div>
+                <div>
+                    <!-- 11 -->
+                    <i class="fa-solid fa-globe"></i>
+                    <h2>Global Operations & Logistics Management</h2>
+                    <p>Mastering global logistics is a complex art that involves choosing the correct Incoterms, selecting carriers, determining the precise HS code, and adhering to export and import regulations to ensure swift market access and optimized landing costs.</p>
+                    
+                </div>
+                <div>
+                    <!-- 16 -->
+                    <i class="fa-solid fa-dolly"></i>
+                    <h2>Distribution Center Management</h2>
+                    <p>Optimizing the workflow from receiving to dispatch is crucial for effective operations. As DC Automation solutions evolve, it's recommended to evaluate the adoption of new technologies. DC associates should display a strong sense of responsibility, function with little oversight, and remain open to both process enhancements and technology updates.</p>
+                    
+                </div>
+                <div>
+                    <!-- 12 -->
+                    <i class="fa-solid fa-at"></i>
+                    <h2>E-Commerce & Omni-Channel Retailing</h2>
+                    <p>E-commerce has enabled retailers to expand their reach. Nevertheless, this has also placed them in direct competition with international retailers, intensifying the supply chain competition.</p>
+                    
+                </div>
+                <div>
+                    <!-- 13 -->
+                    <i class="fa-solid fa-motorcycle"></i>
+                    <h2>Q-Commerce</h2>
+                    <p>A form of e-commerce that focuses on delivering goods to consumers with unprecedented speed, calls for strategically located inventory locations (dark stores) to minimize delivery times and maintain efficiency. This service requires convenience, speed, and flexibility.</p>
+                    
+                </div>
+                <div>
+                    <!-- 14 -->
+                    <i class="fa-regular fa-handshake"></i>
+                    <h2>Last Mile at Customer Service</h2>
+                    <p>The last mile delivery is crucial as it represents the final step in the customer's journey and must be executed flawlessly. The key to success in last-mile delivery lies in the delivery team's attitude and their alignment with the company's customer service values.</p>
+                    
+                </div>
+                <div>
+                    <!-- 15 -->
+                    <i class="fa-solid fa-box"></i>
+                    <h2>Fulfillment Center Management</h2>
+                    <p>While the core activities of a fulfillment center: picking, packing, and shipping, may seem straightforward, it's vital to maintain their simplicity and ensure that every step of the process is optimized. This applies to the applications used in these operations for maximum efficiency.</p>
+                    
+                </div>
+                
+            </div>
+        </div>
+    </div>
+<!-- -------------- Portfolio ---------------  -->
+<!-- <div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png">
+                <div class="layer">
+                    <h3>Personal Portfolio</h3>
+                    <p>Created a dynamic personal portfolio website using CSS, HTML, and JavaScript. It is used for showcasing technical skills and refletcing on the latest projects completed.</p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="">
+                <div class="layer">
+                    <h3></h3>
+                    <p></p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="">
+                <div class="layer">
+                    <h3></h3>
+                    <p></p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+     -->
+
+<!-- -------------- contact --------------  -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-inbox"></i> mmassalkhi@hotmail.com</p>
+                <p><i class="fa-solid fa-mobile-screen-button"></i> +966-55-881-1093</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/mazen-massalkhi-csscp-94983310/"><i class="fa-brands fa-linkedin"></i></a>
+                    
+                </div>
+                <a href="MazenMassalkhi-CV.pdf" download class="btn btn2">Download Resume</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Please Enter your Name" required>
+                    <input type="email" name="Email" placeholder="Please Enter your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Please Enter your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <a href="#header"><i class="fa-solid fa-circle-up"></i></a>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Rafic. Made by Rafic Massalkhi</p>
+    </div>
+</div>
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+
+    </script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxeVg-ZwKBQi0qxrgnLY9aULv3z5G61LV4FeO4yjpW1lM7tlt0OIZOK35lvlwuTHPeH/exec'
+    const form = document.forms['submit-to-google-sheet']
+
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Your message has been sent successfully!"
+            setTimeout (function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+ </body>
+</html>
