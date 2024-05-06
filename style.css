@@ -79,14 +79,16 @@ nav ul li a:hover::after{
     justify-content: space-between;
     flex-wrap: wrap;
 }
-.about-col-1{
-    flex-basis: 35%;
-}
-.about-col-1 img{
-    width: 100%;
-    border-radius: 15px;
-}
 .about-col-2{
+    flex-basis: 35%;
+    text-align: center;
+}
+.about-col-2 img{
+    width: 60%;
+    border-radius: 15px;
+
+}
+.about-col-1{
     flex-basis: 60%;
 }
 .sub-title{
@@ -142,6 +144,7 @@ nav ul li a:hover::after{
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-gap: 40px;
     margin-top: 50px;
+    /* flex-basis: 100%; */
 }
 .services-list div{
     background: #262626;
@@ -156,8 +159,6 @@ nav ul li a:hover::after{
 .services-list div i{
     font-size: 50px;
     margin-bottom: 30px;
-    /* margin-left: 76px; */
-    /* text-align: center; */
  
 }
 .services-list div h2{
@@ -168,7 +169,7 @@ nav ul li a:hover::after{
 }
 
 .services-list div:hover{
-    background: linear-gradient(rgba(0,0,0,0.6), #00ff7b);
+    background: linear-gradient(#00b055, rgba(0,0,0,0.6));
     transform: translateY(-10px);
 
 }
@@ -345,6 +346,15 @@ nav .fa-xmark{
     .header-text h1{
         font-size: 30px;
     }
+    #about{
+        flex-direction: column;
+    }
+    .about-col-2{
+        order: -1;  
+    }
+    .about-col-2 img{
+        width: 250%;
+    }
     nav .fa-bars{
         display: block;
         font-size: 25px;
@@ -378,7 +388,7 @@ nav .fa-xmark{
     .about-col-1{
         flex-basis: 100%;
         margin-bottom: 30px;
-    }
+    }   
     .contact-left, .contact-right{
         flex-basis: 100%;
     }
