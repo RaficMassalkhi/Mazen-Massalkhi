@@ -174,31 +174,36 @@ nav ul li a:hover::after{
 
 }
 /* ------------------- portfolio ------------------- */
-#portfolio{
-    padding: 50px 0;
+#resources{
+    padding-top: 80px;
+}
+.links-text{
+    padding-top: 80px;
 }
 .work-list{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
     grid-gap: 40px;
-    margin-top: 50px;
+    margin-top: 50px;    
+    
 }
 .work{
     border-radius: 10px;
     position: relative;
     overflow: hidden;
 }
+
 .work img{
-    width: 100%;
-    border-radius: 10px;
+    width: 50%;
+    border-radius: 5000px;
     display: block;
-    transition: transform 0.5s;
+    /* transition: transform 0.5s; */
 }
 .layer{
-    width: 100%;
+    width: 50%;
     height: 0;
-    background: linear-gradient(rgba(0,0,0,0.6), #00ff7b);
-    border-radius: 10px;
+    background: linear-gradient(#00b055, rgba(0,0,0,0.6));
+    border-radius: 5000px;
     position: absolute;
     left: 0;
     bottom: 0;
@@ -228,38 +233,22 @@ nav ul li a:hover::after{
     border-radius: 50%;
     text-align: center;
 }
-.work:hover img{
-    transform: scale(1.1);
-}
+
 .work:hover .layer{
     height: 100%;
 }
-.btn{
-    display: block;
-    margin: 50px auto;
-    width: fit-content;
-    border: 1px solid #00b055;
-    padding: 14px 50px;
-    border-radius: 6px;
-    text-decoration: none;
-    color: #fff;
-    transition: background 0.5s;
-}
-.btn:hover{
-    background: #00b055;
-}
 /* --------------------- contact ------------------ */
+#contact{
+    margin-top: 80px;
+}
 .contact-left{
     flex-basis: 35%;
-    margin-top: 30px;
 }
 .contact-right{
     flex-basis: 60%;
-    margin-top: 30px;
 }
 .contact-left p{
-    margin-top: 30px;
-
+    margin-top: 40px;
 }
 .contact-left p i{
     color: #00ff7b;
@@ -321,6 +310,21 @@ form .btn2{
     background: #262626;
     font-weight: 300;
     margin-top: 20px;
+    margin-bottom: -55px;
+}
+.btn{
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid #00b055;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #fff;
+    transition: background 0.5s;
+}
+.btn:hover{
+    background: #00b055;
 }
 
 nav .fa-bars{
