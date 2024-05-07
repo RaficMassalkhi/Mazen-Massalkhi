@@ -32,6 +32,7 @@ nav{
 .logo{
     width: 240px;
     margin-top: -3%;
+    margin-left: -0.5%;
 }
 nav ul li{
     display: inline-block;
@@ -173,16 +174,20 @@ nav ul li a:hover::after{
     transform: translateY(-10px);
 
 }
-/* ------------------- portfolio ------------------- */
+/* ------------------- Resources ------------------- */
 #resources{
     padding-top: 80px;
 }
-.links-text{
-    padding-top: 80px;
+.links-text h1{
+    padding-top: 20px;
 }
+.links-text h2{
+    padding-top: 60px;
+}
+
 .work-list{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    grid-template-columns: repeat(5, 1fr);
     grid-gap: 40px;
     margin-top: 50px;    
     
@@ -195,47 +200,23 @@ nav ul li a:hover::after{
 
 .work img{
     width: 50%;
-    border-radius: 5000px;
+    border-radius: 500px;
     display: block;
-    /* transition: transform 0.5s; */
-}
-.layer{
-    width: 50%;
-    height: 0;
-    background: linear-gradient(#00b055, rgba(0,0,0,0.6));
-    border-radius: 5000px;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    padding: 0 40px;
-    text-align: center;
-    font-size: 14px;
-    transition: height 0.5s;
-}
-.layer h3{
-    font-weight: 700;
-    margin-bottom: 15px;
-}
-.layer a{
-    margin-top: 20px;
-    color: #00b055;
-    text-decoration: none;
-    font-size: 18px;
-    line-height: 60px;
-    background: #fff;
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    text-align: center;
 }
 
-.work:hover .layer{
-    height: 100%;
+.btn{
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid #00b055;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #fff;
+    transition: background 0.5s;
+}
+.btn:hover{
+    background: #00b055;
 }
 /* --------------------- contact ------------------ */
 #contact{
@@ -300,7 +281,7 @@ form .btn2{
     font-size: 18px;
     margin-top: 20px;
     cursor: pointer;
-    margin-left:15px;
+    margin-left:15px; 
 
 }
 .copyright{
@@ -312,20 +293,7 @@ form .btn2{
     margin-top: 20px;
     margin-bottom: -55px;
 }
-.btn{
-    display: block;
-    margin: 50px auto;
-    width: fit-content;
-    border: 1px solid #00b055;
-    padding: 14px 50px;
-    border-radius: 6px;
-    text-decoration: none;
-    color: #fff;
-    transition: background 0.5s;
-}
-.btn:hover{
-    background: #00b055;
-}
+
 
 nav .fa-bars{
     display: none;
@@ -358,6 +326,20 @@ nav .fa-xmark{
     }
     .about-col-2 img{
         width: 250%;
+    }
+    .services-list div{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .links-text h1, h2{
+        width: 150%;
+        font-size: 30px;    
+    }
+    .work-list{
+        width: 150%;
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: 50px;      
     }
     nav .fa-bars{
         display: block;
