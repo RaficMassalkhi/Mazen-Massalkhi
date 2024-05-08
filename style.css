@@ -180,9 +180,11 @@ nav ul li a:hover::after{
 }
 .links-text h1{
     padding-top: 20px;
+    font-size: 25px;
 }
 .links-text h2{
     padding-top: 60px;
+    font-size: 25px;
 }
 
 .work-list{
@@ -306,9 +308,7 @@ nav .fa-xmark{
     #header{
         background-image: url(phone-background.png);
         background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        width: 100%;
+        width: 140%;
     }
     .logo{
         margin-top: 3%;
